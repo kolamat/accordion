@@ -1,7 +1,11 @@
+import FAQ from "./components/FAQ";
+
 function App() {
   return (
-    <div>
-      <h1 className="font-bold text-2xl">koala</h1>
+    <div className="w-full h-screen bg-gradient-to-r from-indigo-500 to-blue-600">
+      <div className="p-4">
+        <FAQ />
+      </div>
     </div>
   );
 }
