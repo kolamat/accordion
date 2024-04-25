@@ -9,6 +9,7 @@ const FAQ = () => {
         Questions="Do you want me to be your nigga??"
         Answer1="No"
         Answer2="Yes"
+        image={plus}
       />
       <Accordion
         Questions="Can I be your Boyfriend and later BoyLover??"
@@ -16,7 +17,12 @@ const FAQ = () => {
         Answer2="Yes"
         image={plus}
       />
-      <Accordion Questions="Will you Marry me??" Answer1="No" Answer2="Yes" />
+      <Accordion
+        Questions="Will you Marry me??"
+        Answer1="No"
+        Answer2="Yes"
+        image={plus}
+      />
     </div>
   );
 };

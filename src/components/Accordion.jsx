@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Accordion = ({ Questions, Answer1, Answer2 }) => {
+const Accordion = ({ Questions, Answer1, Answer2, image }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div className={`text-black`}>
