@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Accordion = ({ Title, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
-    <div>
+    <div className={`text-black`}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className={`flex justify-between w-full`}
