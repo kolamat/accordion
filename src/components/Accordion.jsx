@@ -43,8 +43,12 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
             : `grid-rows-[0fr] opacity-0`
         }`}
       >
-        <div className={`overflow-hidden`}>{Answer1}</div>
-        <div className={`overflow-hidden`}>{Answer2}</div>
+        <div className={`overflow-hidden`}>
+          {Answer1} <input type="checkbox" />
+        </div>
+        <div className={`overflow-hidden`}>
+          {Answer2} <input type="checkbox" />
+        </div>
       </div>
     </div>
   );
