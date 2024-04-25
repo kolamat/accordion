@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import plusMinus from "../assets/plus&minus.svg";
 
 const Accordion = ({ Questions, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -9,8 +10,8 @@ const Accordion = ({ Questions, Answer1, Answer2 }) => {
         className={`sm:flex justify-between w-full grid`}
       >
         <div>{Questions}</div>
-        {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
-        <svg
+        {accordionOpen ? <span>[plusMinus]</span> : <span>[plusMinus]</span>}
+        {/* <svg
           className={`fill-black shrink-0 ml-8`}
           width="16"
           height="16"
@@ -34,7 +35,7 @@ const Accordion = ({ Questions, Answer1, Answer2 }) => {
               accordionOpen && "!rotate-180"
             }`}
           />
-        </svg>
+        </svg> */}
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
