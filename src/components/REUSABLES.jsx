@@ -1,6 +1,4 @@
-import React from "react";
 import Accordion from "./Accordion";
-import plus from "../assets/plus.png";
 
 const FAQ = () => {
   return (

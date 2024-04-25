@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Accordion = ({ Questions, Answer1, Answer2, image }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
