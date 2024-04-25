@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
+import plus from "../assets/plus.png";
 
 const FAQ = () => {
   return (
@@ -13,6 +14,7 @@ const FAQ = () => {
         Questions="Can I be your Boyfriend and later BoyLover??"
         Answer1="No"
         Answer2="Yes"
+        image={plus}
       />
       <Accordion Questions="Will you Marry me??" Answer1="No" Answer2="Yes" />
     </div>
