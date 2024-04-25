@@ -10,7 +10,55 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
       >
         <span>{Title}</span>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
+
         <svg
+          width="92"
+          height="92"
+          viewBox="0 0 92 92"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={`transform origin-center transition duration-200 ease-out ${
+            accordionOpen && `!rotate-180`
+          }`}
+        >
+          <rect
+            x="46.9458"
+            y="0.754883"
+            width="64"
+            height="64"
+            transform="rotate(46.1976 46.9458 0.754883)"
+            fill="#D9D9D9"
+          />
+          <path
+            d="M17.6401 46.8726C61.6389 46.5399 73.6385 46.4492 74.1385 46.4454"
+            stroke="black"
+            stroke-width="4"
+          />
+          <path
+            d="M46.5911 17.7217C44.9286 61.6903 44.4752 73.6817 44.4563 74.1813"
+            stroke="black"
+            stroke-width="4"
+          />
+        </svg>
+
+        <svg
+          width="51"
+          height="6"
+          viewBox="0 0 51 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+            accordionOpen && "!rotate-180"
+          }`}
+        >
+          <path
+            d="M51.0017 3.04858C11.6743 2.9804 0.948685 2.9618 0.501783 2.96103"
+            stroke="black"
+            stroke-width="4"
+          />
+        </svg>
+
+        {/* <svg
           className="fill-indigo-500 shrink-0 ml-8"
           width="16"
           height="16"
@@ -34,7 +82,7 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
               accordionOpen && "!rotate-180"
             }`}
           />
-        </svg>
+        </svg> */}
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
