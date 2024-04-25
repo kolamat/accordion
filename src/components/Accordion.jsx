@@ -6,7 +6,7 @@ const Accordion = ({ Questions, Answer1, Answer2, image }) => {
     <div className={`text-black`}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className={`flex justify-between w-full text-left`}
+        className={`flex justify-between w-full text-left items-center`}
       >
         <div>{Questions}</div>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
