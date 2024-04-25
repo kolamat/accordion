@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Accordion = ({ Title, Answer1, Answer2 }) => {
+const Accordion = ({ Questions, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div className={`text-black`}>
@@ -8,7 +8,7 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className={`sm:flex justify-between w-full grid`}
       >
-        <span>{Title}</span>
+        <div>{Questions}</div>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
         <svg
           className={`fill-black shrink-0 ml-8`}
