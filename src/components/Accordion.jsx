@@ -11,7 +11,7 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
       >
         <span>{Title}</span>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
-        <plusMinus />
+        <svg>{plusMinus}</svg>
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
