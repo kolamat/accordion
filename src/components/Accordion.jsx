@@ -10,7 +10,7 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
       >
         <span>{Title}</span>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
-        {/* <svg
+        <svg
           className="fill-indigo-500 shrink-0 ml-8"
           width="16"
           height="16"
@@ -34,7 +34,7 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
               accordionOpen && "!rotate-180"
             }`}
           />
-        </svg> */}
+        </svg>
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
