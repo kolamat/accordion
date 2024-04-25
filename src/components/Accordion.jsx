@@ -44,10 +44,10 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
         }`}
       >
         <div className={`overflow-hidden`}>
-          {Answer1} <input type="checkbox" />
+          {Answer1} <input type="checkbox" className={`cursor-pointer`} />
         </div>
         <div className={`overflow-hidden`}>
-          {Answer2} <input type="checkbox" />
+          {Answer2} <input type="checkbox" className={`cursor-pointer`} />
         </div>
       </div>
     </div>
