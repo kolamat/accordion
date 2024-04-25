@@ -39,8 +39,8 @@ const Accordion = ({ Title, Answer1, Answer2 }) => {
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
           accordionOpen
-            ? `grid-rows-[0.5] opacity-100`
-            : ` grid-rows-none opacity-0`
+            ? `grid-rows-[1fr] opacity-100`
+            : `grid-rows-[0fr] opacity-0`
         }`}
       >
         <div className={`overflow-hidden`}>
