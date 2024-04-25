@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "react";
 
 const Accordion = ({ Questions, Answer1, Answer2, image }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -49,6 +50,7 @@ const Accordion = ({ Questions, Answer1, Answer2, image }) => {
         <div className={`overflow-hidden`}>
           {Answer2} <input type="checkbox" className={`cursor-pointer`} />
         </div>
+        <Image>{image}</Image>
       </div>
     </div>
   );
