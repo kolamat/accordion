@@ -3,10 +3,10 @@ import React, { useState } from "react";
 const Accordion = ({ Title, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
-    <div className={`text-black sm:block grid`}>
+    <div className={`text-black`}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className={`flex justify-between w-full`}
+        className={`sm:flex justify-between w-full grid`}
       >
         <span>{Title}</span>
         {/* {accordionOpen ? <span>---</span> : <span>+</span>} */}
