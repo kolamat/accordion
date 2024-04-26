@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Accordion = ({ Questions, Answer1, Answer2, Image }) => {
+const Accordion = ({ Questions, Answer1, Answer2, img }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div className={`text-black`}>
@@ -52,7 +52,7 @@ const Accordion = ({ Questions, Answer1, Answer2, Image }) => {
         {/* <div className={`overflow-hidden`}>
           <img src={shrekFunnyPic} alt="" width={30} height={1} />
         </div> */}
-        {Image}
+        {img}
       </div>
     </div>
   );
