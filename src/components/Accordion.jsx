@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Accordion = ({ Questions, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
