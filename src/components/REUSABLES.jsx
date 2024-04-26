@@ -1,5 +1,4 @@
 import Accordion from "./Accordion";
-import shrekFunnyPic from "../assets/shrek-funny-pic.jpg";
 
 const FAQ = () => {
   return (
@@ -8,19 +7,17 @@ const FAQ = () => {
         Questions="Do you want me to be your nigga??"
         Answer1="No"
         Answer2="Yes"
-      >
-        <img src={shrekFunnyPic} alt="shrekFunnyPic" />
-      </Accordion>
+      ></Accordion>
       <Accordion
         Questions="Can I be your Boyfriend and later BoyLover??"
         Answer1="No"
         Answer2="Yes"
-      >
-        <img src={shrekFunnyPic} alt="shrekFunnyPic" />
-      </Accordion>
-      <Accordion Questions="Will you Marry me??" Answer1="No" Answer2="Yes">
-        <img src={shrekFunnyPic} alt="shrekFunnyPic" />
-      </Accordion>
+      ></Accordion>
+      <Accordion
+        Questions="Will you Marry me??"
+        Answer1="No"
+        Answer2="Yes"
+      ></Accordion>
     </div>
   );
 };
