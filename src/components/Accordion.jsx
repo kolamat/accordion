@@ -10,7 +10,19 @@ const Accordion = ({ Questions, Answer1, Answer2 }) => {
         className={`flex justify-between w-full text-left items-center`}
       >
         <div>{Questions}</div>
-        {accordionOpen ? <FaMinus /> : <FaPlus />}
+        {accordionOpen ? (
+          <FaMinus
+            className={`transform origin-center transition duration-500 ease-out ${
+              accordionOpen && `!rotate-180`
+            }`}
+          />
+        ) : (
+          <FaPlus
+            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+              accordionOpen && "!rotate-180"
+            }`}
+          />
+        )}
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
