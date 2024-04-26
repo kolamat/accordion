@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Accordion = ({ Questions, Answer1, Answer2, img }) => {
+const Accordion = ({ Questions, Answer1, Answer2 }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div className={`text-black`}>
@@ -49,10 +49,6 @@ const Accordion = ({ Questions, Answer1, Answer2, img }) => {
         <div className={`overflow-hidden`}>
           {Answer2} <input type="checkbox" className={`cursor-pointer`} />
         </div>
-        {/* <div className={`overflow-hidden`}>
-          <img src={shrekFunnyPic} alt="" width={30} height={1} />
-        </div> */}
-        {img}
       </div>
     </div>
   );
