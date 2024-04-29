@@ -10,8 +10,7 @@ export default function Accordion1({ children, value, onChange, ...props }) {
   }, [selected]);
 
   return (
-    <ul>
-      {...props}
+    <ul {...props}>
       <AccordionContext.Provider>{children}</AccordionContext.Provider>
     </ul>
   );
