@@ -1,7 +1,18 @@
 import { createContext, useEffect, useState } from "react";
 
-const accordion1 = () => {
-  return <div>accordion1</div>;
-};
+const AccordionContext = createContext;
 
-export default accordion1;
+export default function Accordion1({ children, value, onChange, ...props }) {
+  const [selected, setSelected] = useState(value);
+
+  useEffect(() => {
+    onChange?.(selected);
+  }, [selected]);
+
+  return (
+    <ul>
+      {...props}
+      <AccordionContext.Provider>{children}</AccordionContext.Provider>
+    </ul>
+  );
+}
