@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
 import { FaMinus } from "react-icons/fa";
-import { FaPlus, FaMinus } from "react-icons/fa";
 
 const AccordianContext = createContext;
 
@@ -30,7 +29,7 @@ export function AccordianItem({ children, value, trigger, ...props }) {
         {trigger}
         <FaMinus size={16} />
       </header>
-      <div className="overflow-y-hidden">
+      <div className="overflow-y-hidden" style={{ height: open ? "100%" : 0 }}>
         <div className="p-2 pb-4">{children}</div>
       </div>
     </li>
