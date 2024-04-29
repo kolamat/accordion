@@ -1,18 +1,13 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Accordion = ({ Questions, Answer1, Answer2 }) => {
-  const [accordionOpen, setAccordionOpen] = useState(null);
-
-  const select = useCallback((i) => {
-    if (accordionOpen === i) return setAccordionOpen(null);
-    setAccordionOpen(i);
-  });
+  const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
     <div className={`text-black`}>
       <button
-        onClick={() => select(!accordionOpen)}
+        onClick={() => setAccordionOpen(!accordionOpen)}
         className={`flex justify-between w-full text-left items-center`}
       >
         <div>{Questions}</div>
