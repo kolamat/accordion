@@ -1,6 +1,8 @@
 import { createContext, useEffect, useState } from "react";
+import { FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
-const AccordionContext = createContext;
+const AccordianContext = createContext;
 
 export default function Accordion1({ children, value, onChange, ...props }) {
   const [selected, setSelected] = useState(value);
@@ -15,5 +17,22 @@ export default function Accordion1({ children, value, onChange, ...props }) {
         {children}
       </AccordionContext.Provider>
     </ul>
+  );
+}
+
+export function AccordianItem({ children, value, trigger, ...props }) {
+  const { selected, setSelected } = useContext(AccordianContext);
+  const open = selected === value;
+
+  return (
+    <li className="border-b">
+      <header role="button" onClick={() => setSelected(open ? null : value)}>
+        {trigger}
+        <FaMinus size={16} />
+      </header>
+      <div className="overflow-y-hidden">
+        <div className="p-2 pb-4">{children}</div>
+      </div>
+    </li>
   );
 }
